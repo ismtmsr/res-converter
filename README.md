@@ -43,3 +43,13 @@ Next Steps:
 ##  ReferenceError: process is not defined
 
 [electron-vueで「ReferenceError: process is not defined」が出たときの対処法](https://taklog.me/archives/811)
+
+## [Vuetify] Multiple instances of Vue detected
+
+[Electron-VueでVuetifyを使用した際に「Multiple instances of Vue detected」が発生する時の対処法](https://qiita.com/ryo2132/items/035e9745f941c6c98654)
+
+```
+.electreon-vue/webpack.renderer.config.js
+- let whiteListedModules = ['vue']
++ let whiteListedModules = ['vue', 'vuetify']
+```
